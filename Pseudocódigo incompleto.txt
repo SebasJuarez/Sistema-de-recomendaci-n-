@@ -1,0 +1,52 @@
+CREAR GRAFO:
+
+def Add_Object(V){
+  global graph, vertices_no, vertices
+  if v in vertices{
+    print("Vertex ", V, " already exists")
+    }
+  else{
+    vertices_no ++
+    vertices.append(V)
+    if vertices_no > 1{
+        for vertex in graph:
+            vertex.append(0)
+    }
+    temp = []
+    for i in range(vertices_no){
+        temp.append(0)
+    graph.append(temp)
+    }
+    }
+}
+
+def Add_Link(V1, V2, Weight){
+    global graph, vertices_no, vertices
+    if V1 not in vertices{
+        print("Error")
+    }
+    elif v2 not in vertices{
+        print("Error”)
+    }
+    else{
+        index1 = vertices.index(v1)
+        index2 = vertices.index(v2)
+        graph[index1][index2] = Weight
+    }
+}
+
+def Print_Dataset(){
+  global graph, vertices_no
+  for i in range(vertices_no){
+    for j in range(vertices_no){
+      if graph[i][j] != 0{
+        print(vertices[i], " -> ", vertices[j], \
+        " edge weight: ", graph[i][j])
+        }
+    }
+}
+}
+
+vertices = []
+vertices_no = 0
+graph = []
