@@ -156,16 +156,16 @@ public class GUI extends javax.swing.JFrame {
     //metodos
     
     //settear las marcas
-    public void setBrands(String[] brands){
-        Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
-        Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
-        Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
+    public void setManufacturers(String[] Manufacturers){
+        Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
+        Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
+        Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
     }
     //eliminar marca de otros selectores si ya fue elegida
-    public void BrandChange(String brand){ 
-        //Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
-        //Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
-        //Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
+    public void ManufacturerChange(String Selected1, String Selected2, String Selected3){ 
+        //Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Selected1));
+        //Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(Selected2));
+        //Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(Selected3));
     }
     
     public static void main(String args[]) {
