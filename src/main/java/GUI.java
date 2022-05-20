@@ -153,6 +153,21 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //metodos
+    
+    //settear las marcas
+    public void setBrands(String[] brands){
+        Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
+        Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
+        Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(brands));
+    }
+    //eliminar marca de otros selectores si ya fue elegida
+    public void BrandChange(String brand){ 
+        //Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
+        //Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
+        //Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(brand));
+    }
+    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
