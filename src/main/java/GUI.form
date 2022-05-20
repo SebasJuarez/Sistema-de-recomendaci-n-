@@ -2,8 +2,6 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.JSlider" name="jSlider1">
-    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -35,29 +33,29 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="Marca_1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Brand_1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="Marca_2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Brand_2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="Marca_3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Brand_3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="Title" alignment="0" max="32767" attributes="0"/>
                               <Component id="Text_1" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel1" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="Text_3" min="-2" pref="37" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Min_Slider" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel3" max="32767" attributes="0"/>
+                                  <Component id="Min_Range" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel2" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="Text_4" min="-2" pref="37" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSlider3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Max_Slider" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel4" min="-2" pref="55" max="-2" attributes="0"/>
+                                  <Component id="Max_Range" min="-2" pref="55" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -77,25 +75,25 @@
               <Component id="Text_1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Marca_1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Marca_2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Marca_3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Brand_1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Brand_2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Brand_3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Text_2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jSlider2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Text_3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Min_Slider" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Min_Range" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jSlider3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Text_4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Max_Slider" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="Max_Range" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="197" max="32767" attributes="0"/>
           </Group>
@@ -118,7 +116,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="Marca_1">
+    <Component class="javax.swing.JComboBox" name="Brand_1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -156,7 +154,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="Marca_2">
+    <Component class="javax.swing.JComboBox" name="Brand_2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -180,7 +178,7 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JComboBox" name="Marca_3">
+    <Component class="javax.swing.JComboBox" name="Brand_3">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -218,7 +216,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="Text_3">
       <Properties>
         <Property name="text" type="java.lang.String" value="min"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -233,7 +231,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="Text_4">
       <Properties>
         <Property name="text" type="java.lang.String" value="max"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -248,9 +246,9 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSlider" name="jSlider2">
+    <Component class="javax.swing.JSlider" name="Min_Slider">
       <Properties>
-        <Property name="inverted" type="boolean" value="true"/>
+        <Property name="value" type="int" value="0"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[200, 15]"/>
         </Property>
@@ -262,8 +260,9 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSlider" name="jSlider3">
+    <Component class="javax.swing.JSlider" name="Max_Slider">
       <Properties>
+        <Property name="value" type="int" value="100"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[200, 15]"/>
         </Property>
@@ -275,7 +274,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="Min_Range">
       <Properties>
         <Property name="text" type="java.lang.String" value="5,000"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -290,7 +289,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="Max_Range">
       <Properties>
         <Property name="text" type="java.lang.String" value="5,000,000"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
