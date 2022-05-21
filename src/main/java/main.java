@@ -7,7 +7,8 @@ public class main {
         GUI Interfaz= new GUI();
         Interfaz.show();
         ArrayList<String> Manufacturer = new ArrayList<>();
- 
+        
+        // Agregar Marcas a GUI
         try{
             Scanner LCMDB  = new Scanner(new File("LCMDB.txt"));
             while (LCMDB.hasNextLine()){
@@ -16,7 +17,6 @@ public class main {
         }catch(FileNotFoundException e){
             System.out.println("ERROR");
         }
-            System.out.println(Manufacturer);
         Interfaz.setManufacturers(Manufacturer);
     }
 }

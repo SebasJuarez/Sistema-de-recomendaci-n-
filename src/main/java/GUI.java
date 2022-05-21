@@ -155,9 +155,9 @@ public class GUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    //metodos
+    //Metodos
     
-    //settear las marcas
+    //Settear las marcas
     public void setManufacturers(ArrayList<String> Manufacturers){
         String[] Item = Manufacturers.toArray(String[]::new);
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Item));
