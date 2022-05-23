@@ -157,6 +157,29 @@ public class GUI extends javax.swing.JFrame {
 
     //Metodos
     
+    public float getMinSlider(){
+        float Min;
+        Min = Min_Slider.getValue();
+        return Min;
+    }
+    
+    public float getMaxSlider(){
+        float Max;
+        Max = Max_Slider.getValue();
+        return Max;
+    }
+    
+    public void setMinValue(int Min){
+        String Value;
+        Value = String.valueOf(Min);
+        Min_Range.setText(Value);
+    }
+    
+    public void setMaxValue(int Max){
+        String Value;
+        Value = String.valueOf(Max);
+        Max_Range.setText(Value);
+    }
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
