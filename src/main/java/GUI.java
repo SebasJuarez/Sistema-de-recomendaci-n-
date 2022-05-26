@@ -20,8 +20,37 @@ operations OP = new operations();
         Max_Range = new javax.swing.JLabel();
         Min_Range1 = new javax.swing.JLabel();
         Min = new javax.swing.JTextField();
-        Toggle = new javax.swing.JButton();
+        Budget = new javax.swing.JButton();
         Max = new javax.swing.JTextField();
+        Text_3 = new javax.swing.JLabel();
+        Check_1 = new javax.swing.JCheckBox();
+        IMG_1 = new javax.swing.JLabel();
+        IMG_2 = new javax.swing.JLabel();
+        Check_2 = new javax.swing.JCheckBox();
+        IMG_3 = new javax.swing.JLabel();
+        Check_3 = new javax.swing.JCheckBox();
+        IMG_4 = new javax.swing.JLabel();
+        Check_4 = new javax.swing.JCheckBox();
+        IMG_5 = new javax.swing.JLabel();
+        Check_5 = new javax.swing.JCheckBox();
+        IMG_6 = new javax.swing.JLabel();
+        Check_6 = new javax.swing.JCheckBox();
+        Send_Data = new javax.swing.JButton();
+        Text_4 = new javax.swing.JLabel();
+        Text_5 = new javax.swing.JLabel();
+        Text_6 = new javax.swing.JLabel();
+        Car_IMG_1 = new javax.swing.JLabel();
+        Car_IMG_2 = new javax.swing.JLabel();
+        Car_IMG_3 = new javax.swing.JLabel();
+        Car_Manufacturer_1 = new javax.swing.JLabel();
+        Car_Model_1 = new javax.swing.JLabel();
+        Car_Price_1 = new javax.swing.JLabel();
+        Car_Manufacturer_2 = new javax.swing.JLabel();
+        Car_Model_2 = new javax.swing.JLabel();
+        Car_Price_2 = new javax.swing.JLabel();
+        Car_Manufacturer_3 = new javax.swing.JLabel();
+        Car_Model_3 = new javax.swing.JLabel();
+        Car_Price_3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("0"); // NOI18N
@@ -38,7 +67,7 @@ operations OP = new operations();
         Brand_1.setName("0"); // NOI18N
         Brand_1.setPreferredSize(new java.awt.Dimension(150, 20));
 
-        Text_1.setText("Seleccione sus marcas de autos favoritas:");
+        Text_1.setText("Choose your favorite car manufacturers:");
         Text_1.setMaximumSize(new java.awt.Dimension(750, 750));
         Text_1.setMinimumSize(new java.awt.Dimension(0, 0));
         Text_1.setName("0"); // NOI18N
@@ -54,7 +83,7 @@ operations OP = new operations();
         Brand_3.setName("0"); // NOI18N
         Brand_3.setPreferredSize(new java.awt.Dimension(150, 20));
 
-        Text_2.setText("Seleccione su presupuesto: ( 5,000$ - 5,000,000$ )");
+        Text_2.setText("Choose your budget: ( 5,000$ - 5,000,000$ )");
         Text_2.setMaximumSize(new java.awt.Dimension(750, 750));
         Text_2.setMinimumSize(new java.awt.Dimension(0, 0));
         Text_2.setName("0"); // NOI18N
@@ -82,15 +111,20 @@ operations OP = new operations();
         Min.setMaximumSize(new java.awt.Dimension(750, 750));
         Min.setMinimumSize(new java.awt.Dimension(0, 0));
         Min.setPreferredSize(new java.awt.Dimension(75, 20));
-
-        Toggle.setText("Load");
-        Toggle.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        Toggle.setMaximumSize(new java.awt.Dimension(750, 750));
-        Toggle.setMinimumSize(new java.awt.Dimension(0, 0));
-        Toggle.setPreferredSize(new java.awt.Dimension(75, 20));
-        Toggle.addActionListener(new java.awt.event.ActionListener() {
+        Min.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ToggleActionPerformed(evt);
+                MinActionPerformed(evt);
+            }
+        });
+
+        Budget.setText("Load");
+        Budget.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        Budget.setMaximumSize(new java.awt.Dimension(750, 750));
+        Budget.setMinimumSize(new java.awt.Dimension(0, 0));
+        Budget.setPreferredSize(new java.awt.Dimension(75, 20));
+        Budget.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BudgetActionPerformed(evt);
             }
         });
 
@@ -103,6 +137,153 @@ operations OP = new operations();
                 MaxActionPerformed(evt);
             }
         });
+
+        Text_3.setText("Check the cars you like:");
+        Text_3.setMaximumSize(new java.awt.Dimension(750, 750));
+        Text_3.setMinimumSize(new java.awt.Dimension(0, 0));
+        Text_3.setName("0"); // NOI18N
+        Text_3.setPreferredSize(new java.awt.Dimension(300, 16));
+
+        Check_1.setText("✓");
+        Check_1.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_1.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_1.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        IMG_1.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        IMG_2.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Check_2.setText("✓");
+        Check_2.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_2.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_2.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        IMG_3.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Check_3.setText("✓");
+        Check_3.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_3.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_3.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        IMG_4.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Check_4.setText("✓");
+        Check_4.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_4.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_4.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        IMG_5.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Check_5.setText("✓");
+        Check_5.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_5.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_5.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        IMG_6.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Check_6.setText("✓");
+        Check_6.setMaximumSize(new java.awt.Dimension(750, 750));
+        Check_6.setMinimumSize(new java.awt.Dimension(0, 0));
+        Check_6.setPreferredSize(new java.awt.Dimension(35, 20));
+
+        Send_Data.setText("Send data and view recommended cars");
+        Send_Data.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        Send_Data.setMaximumSize(new java.awt.Dimension(750, 750));
+        Send_Data.setMinimumSize(new java.awt.Dimension(0, 0));
+        Send_Data.setPreferredSize(new java.awt.Dimension(75, 20));
+        Send_Data.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Send_DataActionPerformed(evt);
+            }
+        });
+
+        Text_4.setText("Car 1:");
+        Text_4.setMaximumSize(new java.awt.Dimension(750, 750));
+        Text_4.setMinimumSize(new java.awt.Dimension(0, 0));
+        Text_4.setName("0"); // NOI18N
+        Text_4.setPreferredSize(new java.awt.Dimension(300, 16));
+        Text_4.setRequestFocusEnabled(false);
+
+        Text_5.setText("Car 3:");
+        Text_5.setMaximumSize(new java.awt.Dimension(750, 750));
+        Text_5.setMinimumSize(new java.awt.Dimension(0, 0));
+        Text_5.setName("0"); // NOI18N
+        Text_5.setPreferredSize(new java.awt.Dimension(300, 16));
+
+        Text_6.setText("Car 2:");
+        Text_6.setMaximumSize(new java.awt.Dimension(750, 750));
+        Text_6.setMinimumSize(new java.awt.Dimension(0, 0));
+        Text_6.setName("0"); // NOI18N
+        Text_6.setPreferredSize(new java.awt.Dimension(300, 16));
+
+        Car_IMG_1.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Car_IMG_2.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Car_IMG_3.setMaximumSize(new java.awt.Dimension(750, 750));
+
+        Car_Manufacturer_1.setText("Manufacturer:");
+        Car_Manufacturer_1.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Manufacturer_1.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Manufacturer_1.setName("0"); // NOI18N
+        Car_Manufacturer_1.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Manufacturer_1.setRequestFocusEnabled(false);
+
+        Car_Model_1.setText("Model: ");
+        Car_Model_1.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Model_1.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Model_1.setName("0"); // NOI18N
+        Car_Model_1.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Model_1.setRequestFocusEnabled(false);
+
+        Car_Price_1.setText("Price: ");
+        Car_Price_1.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Price_1.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Price_1.setName("0"); // NOI18N
+        Car_Price_1.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Price_1.setRequestFocusEnabled(false);
+
+        Car_Manufacturer_2.setText("Manufacturer:");
+        Car_Manufacturer_2.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Manufacturer_2.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Manufacturer_2.setName("0"); // NOI18N
+        Car_Manufacturer_2.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Manufacturer_2.setRequestFocusEnabled(false);
+
+        Car_Model_2.setText("Model: ");
+        Car_Model_2.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Model_2.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Model_2.setName("0"); // NOI18N
+        Car_Model_2.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Model_2.setRequestFocusEnabled(false);
+
+        Car_Price_2.setText("Price: ");
+        Car_Price_2.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Price_2.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Price_2.setName("0"); // NOI18N
+        Car_Price_2.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Price_2.setRequestFocusEnabled(false);
+
+        Car_Manufacturer_3.setText("Manufacturer:");
+        Car_Manufacturer_3.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Manufacturer_3.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Manufacturer_3.setName("0"); // NOI18N
+        Car_Manufacturer_3.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Manufacturer_3.setRequestFocusEnabled(false);
+
+        Car_Model_3.setText("Model: ");
+        Car_Model_3.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Model_3.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Model_3.setName("0"); // NOI18N
+        Car_Model_3.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Model_3.setRequestFocusEnabled(false);
+
+        Car_Price_3.setText("Price: ");
+        Car_Price_3.setMaximumSize(new java.awt.Dimension(750, 750));
+        Car_Price_3.setMinimumSize(new java.awt.Dimension(0, 0));
+        Car_Price_3.setName("0"); // NOI18N
+        Car_Price_3.setPreferredSize(new java.awt.Dimension(300, 16));
+        Car_Price_3.setRequestFocusEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,7 +312,66 @@ operations OP = new operations();
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Toggle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(Budget, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Text_3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Send_Data, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Car_IMG_2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Car_IMG_1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Text_4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Text_6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Text_5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Car_IMG_3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Car_Manufacturer_1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Model_1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Price_1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Car_Manufacturer_2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Model_2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Price_2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Car_Manufacturer_3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Model_3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Car_Price_3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(IMG_1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(IMG_2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(IMG_3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(IMG_4, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(IMG_5, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(IMG_6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Check_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(0, 0, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -155,8 +395,58 @@ operations OP = new operations();
                     .addComponent(Min_Range1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Max_Range, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Toggle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(214, Short.MAX_VALUE))
+                    .addComponent(Budget, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Text_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(IMG_1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IMG_2, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IMG_3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(IMG_4, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IMG_5, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IMG_6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Check_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Send_Data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Text_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Text_5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Text_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Car_IMG_1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Car_IMG_2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Car_IMG_3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Car_Manufacturer_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Model_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Price_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Car_Manufacturer_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Model_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Price_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Car_Manufacturer_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Model_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Car_Price_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -165,7 +455,7 @@ operations OP = new operations();
 //Metodos
     
     
-    private void ToggleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleActionPerformed
+    private void BudgetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BudgetActionPerformed
         try{
             int MinVal = Integer.parseInt(Min.getText());
             int MaxVal = Integer.parseInt(Max.getText());
@@ -189,11 +479,19 @@ operations OP = new operations();
             Max_Range.setText("5,000,000");
             System.out.println("4");
         }
-    }//GEN-LAST:event_ToggleActionPerformed
+    }//GEN-LAST:event_BudgetActionPerformed
 
     private void MaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MaxActionPerformed
+
+    private void Send_DataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Send_DataActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Send_DataActionPerformed
+
+    private void MinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MinActionPerformed
 
             
     //Settear las marcas
@@ -238,14 +536,43 @@ operations OP = new operations();
     private javax.swing.JComboBox<String> Brand_1;
     private javax.swing.JComboBox<String> Brand_2;
     private javax.swing.JComboBox<String> Brand_3;
+    private javax.swing.JButton Budget;
+    private javax.swing.JLabel Car_IMG_1;
+    private javax.swing.JLabel Car_IMG_2;
+    private javax.swing.JLabel Car_IMG_3;
+    private javax.swing.JLabel Car_Manufacturer_1;
+    private javax.swing.JLabel Car_Manufacturer_2;
+    private javax.swing.JLabel Car_Manufacturer_3;
+    private javax.swing.JLabel Car_Model_1;
+    private javax.swing.JLabel Car_Model_2;
+    private javax.swing.JLabel Car_Model_3;
+    private javax.swing.JLabel Car_Price_1;
+    private javax.swing.JLabel Car_Price_2;
+    private javax.swing.JLabel Car_Price_3;
+    private javax.swing.JCheckBox Check_1;
+    private javax.swing.JCheckBox Check_2;
+    private javax.swing.JCheckBox Check_3;
+    private javax.swing.JCheckBox Check_4;
+    private javax.swing.JCheckBox Check_5;
+    private javax.swing.JCheckBox Check_6;
+    private javax.swing.JLabel IMG_1;
+    private javax.swing.JLabel IMG_2;
+    private javax.swing.JLabel IMG_3;
+    private javax.swing.JLabel IMG_4;
+    private javax.swing.JLabel IMG_5;
+    private javax.swing.JLabel IMG_6;
     private javax.swing.JTextField Max;
     private javax.swing.JLabel Max_Range;
     private javax.swing.JTextField Min;
     private javax.swing.JLabel Min_Range;
     private javax.swing.JLabel Min_Range1;
+    private javax.swing.JButton Send_Data;
     private javax.swing.JLabel Text_1;
     private javax.swing.JLabel Text_2;
+    private javax.swing.JLabel Text_3;
+    private javax.swing.JLabel Text_4;
+    private javax.swing.JLabel Text_5;
+    private javax.swing.JLabel Text_6;
     private javax.swing.JLabel Title;
-    private javax.swing.JButton Toggle;
     // End of variables declaration//GEN-END:variables
 }
