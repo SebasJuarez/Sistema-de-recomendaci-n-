@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class GUI extends javax.swing.JFrame {
-
+operations OP = new operations();
+    
     public GUI() {
         initComponents();
     }
@@ -15,10 +16,6 @@ public class GUI extends javax.swing.JFrame {
         Brand_2 = new javax.swing.JComboBox<>();
         Brand_3 = new javax.swing.JComboBox<>();
         Text_2 = new javax.swing.JLabel();
-        Text_3 = new javax.swing.JLabel();
-        Text_4 = new javax.swing.JLabel();
-        Min_Slider = new javax.swing.JSlider();
-        Max_Slider = new javax.swing.JSlider();
         Min_Range = new javax.swing.JLabel();
         Max_Range = new javax.swing.JLabel();
         Min_Range1 = new javax.swing.JLabel();
@@ -63,30 +60,6 @@ public class GUI extends javax.swing.JFrame {
         Text_2.setName("0"); // NOI18N
         Text_2.setPreferredSize(new java.awt.Dimension(300, 16));
 
-        Text_3.setText("min");
-        Text_3.setMaximumSize(new java.awt.Dimension(750, 750));
-        Text_3.setMinimumSize(new java.awt.Dimension(0, 0));
-        Text_3.setName("0"); // NOI18N
-        Text_3.setPreferredSize(new java.awt.Dimension(25, 15));
-        Text_3.setRequestFocusEnabled(false);
-
-        Text_4.setText("max");
-        Text_4.setMaximumSize(new java.awt.Dimension(750, 750));
-        Text_4.setMinimumSize(new java.awt.Dimension(0, 0));
-        Text_4.setName("0"); // NOI18N
-        Text_4.setPreferredSize(new java.awt.Dimension(25, 15));
-        Text_4.setRequestFocusEnabled(false);
-
-        Min_Slider.setValue(0);
-        Min_Slider.setMaximumSize(new java.awt.Dimension(750, 750));
-        Min_Slider.setMinimumSize(new java.awt.Dimension(0, 0));
-        Min_Slider.setPreferredSize(new java.awt.Dimension(200, 15));
-
-        Max_Slider.setValue(100);
-        Max_Slider.setMaximumSize(new java.awt.Dimension(750, 750));
-        Max_Slider.setMinimumSize(new java.awt.Dimension(0, 0));
-        Max_Slider.setPreferredSize(new java.awt.Dimension(200, 15));
-
         Min_Range.setText("5,000");
         Min_Range.setMaximumSize(new java.awt.Dimension(750, 750));
         Min_Range.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -105,11 +78,12 @@ public class GUI extends javax.swing.JFrame {
         Min_Range1.setPreferredSize(new java.awt.Dimension(55, 15));
         Min_Range1.setRequestFocusEnabled(false);
 
+        Min.setText("5000");
         Min.setMaximumSize(new java.awt.Dimension(750, 750));
         Min.setMinimumSize(new java.awt.Dimension(0, 0));
         Min.setPreferredSize(new java.awt.Dimension(75, 20));
 
-        Toggle.setText("Manual Toggle");
+        Toggle.setText("Load");
         Toggle.setMargin(new java.awt.Insets(0, 0, 0, 0));
         Toggle.setMaximumSize(new java.awt.Dimension(750, 750));
         Toggle.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -120,6 +94,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        Max.setText("5000000");
         Max.setMaximumSize(new java.awt.Dimension(750, 750));
         Max.setMinimumSize(new java.awt.Dimension(0, 0));
         Max.setPreferredSize(new java.awt.Dimension(75, 20));
@@ -146,28 +121,17 @@ public class GUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Brand_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Text_4, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
-                            .addComponent(Text_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Min_Slider, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Min_Range, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(Max_Slider, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Max_Range, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(Min, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Min_Range, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Min_Range1, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Max_Range, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Toggle, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(Toggle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -186,32 +150,44 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(Text_2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Text_3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Min_Slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Min_Range, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Text_4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Max_Slider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Max_Range, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Min_Range, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Min_Range1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Max_Range, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Toggle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(170, Short.MAX_VALUE))
+                .addContainerGap(214, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    boolean State = true;
+//Metodos
+    
+    
     private void ToggleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleActionPerformed
-        if(State == true){
-            State = false;
-        }else{
-            State = true;
+        try{
+            int MinVal = Integer.parseInt(Min.getText());
+            int MaxVal = Integer.parseInt(Max.getText());
+            if(MinVal >= 5000 && MinVal <= 500000  && MaxVal >= 10000  && MaxVal <= 5000000 ){
+                if(MinVal + 5000 < MaxVal){
+                Min_Range.setText(String.format("%,d", MinVal));
+                Max_Range.setText(String.format("%,d", MaxVal));
+                System.out.println("1");
+                }else{
+                Min_Range.setText(String.format("%,d", MaxVal - 5000));
+                Max_Range.setText(String.format("%,d", MaxVal));
+                System.out.println("2");
+                }
+            }else{
+                Min_Range.setText("5,000");
+                Max_Range.setText("5,000,000");
+                System.out.println("3");
+            }
+        }catch(NumberFormatException e){
+            Min_Range.setText("5,000");
+            Max_Range.setText("5,000,000");
+            System.out.println("4");
         }
     }//GEN-LAST:event_ToggleActionPerformed
 
@@ -219,36 +195,7 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MaxActionPerformed
 
-    //Metodos
-    
-    public boolean getButtonState(){
-        return State;
-    }
-    
-    public int getMinValueText(){
-        return Integer.parseInt(Min.getText());
-    }
-    
-    public int getMaxValueText(){
-        return Integer.parseInt(Max.getText());
-    }
-    
-    public float getMinSlider(){
-        return Min_Slider.getValue();
-    }
-    
-    public float getMaxSlider(){
-        return Max_Slider.getValue();
-    }
-        
-    public void setMinValue(int Min){
-        Min_Range.setText(String.format("%,d", Min));
-    }
-    
-    public void setMaxValue(int Max){
-        Max_Range.setText(String.format("%,d", Max));
-    }
-    
+            
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
@@ -293,15 +240,11 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> Brand_3;
     private javax.swing.JTextField Max;
     private javax.swing.JLabel Max_Range;
-    private javax.swing.JSlider Max_Slider;
     private javax.swing.JTextField Min;
     private javax.swing.JLabel Min_Range;
     private javax.swing.JLabel Min_Range1;
-    private javax.swing.JSlider Min_Slider;
     private javax.swing.JLabel Text_1;
     private javax.swing.JLabel Text_2;
-    private javax.swing.JLabel Text_3;
-    private javax.swing.JLabel Text_4;
     private javax.swing.JLabel Title;
     private javax.swing.JButton Toggle;
     // End of variables declaration//GEN-END:variables
