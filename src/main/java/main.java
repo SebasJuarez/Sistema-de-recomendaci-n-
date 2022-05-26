@@ -12,13 +12,13 @@ public class main {
         Interfaz.setManufacturers(DB.getCarManufacturers());
         while (true){
             int Budget_Min, Budget_Max;
-            Budget_Min = OP.MapRange(0, 100, 5000, 990000, Interfaz.getMinSlider_K()) + OP.MapRange(0, 100, 0, 10000, Interfaz.getMinSlider());
-            Budget_Max = OP.MapRange(0, 100, 5000, 990000, Interfaz.getMaxSlider_K()) + OP.MapRange(0, 100, 0, 10000, Interfaz.getMaxSlider());
-            if (Budget_Min + 5000 < Budget_Max){
-                Interfaz.setMinValue(Budget_Min);
-                Interfaz.setMaxValue(Budget_Max);
+            Budget_Min = OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider());
+            Budget_Max = OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMaxSlider());
+            if (Budget_Min + 4900 < Budget_Max){
+                Interfaz.setMinValue(OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider()));
+                Interfaz.setMaxValue(OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMaxSlider()));
             }else{
-                Interfaz.setMinValue(Budget_Max - 5100);
+                Interfaz.setMinValue(Budget_Max - 5000);
                 Interfaz.setMaxValue(Budget_Max);
             }
         }

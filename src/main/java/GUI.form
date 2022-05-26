@@ -37,35 +37,34 @@
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="Brand_3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="Text_3" min="-2" pref="46" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Min_Slider_K" max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="Text_4" min="-2" pref="46" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Max_Slider_K" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="Text_6" alignment="0" pref="46" max="32767" attributes="0"/>
-                              <Component id="Text_5" alignment="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="Min_Range" min="-2" pref="65" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="Text_4" pref="65" max="32767" attributes="0"/>
+                          <Component id="Text_3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Max_Slider" max="32767" attributes="0"/>
-                          <Component id="Min_Slider" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Min_Slider" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Min_Range" min="-2" pref="65" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" attributes="0">
-                              <Component id="Min_Range1" min="-2" pref="5" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="Max_Slider" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="Max_Range" min="-2" pref="65" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="Min" min="-2" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Min_Range1" min="-2" pref="5" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Max" min="-2" pref="65" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -90,30 +89,23 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Text_3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Min_Slider_K" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Min_Slider" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Min_Range" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Text_4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Max_Slider_K" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Text_5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Min_Slider" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Text_6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Max_Slider" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Max_Range" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Min_Range" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Max_Range" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Min" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Min_Range1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Max" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="131" max="32767" attributes="0"/>
+              <EmptySpace pref="170" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -140,12 +132,7 @@
     <Component class="javax.swing.JComboBox" name="Brand_1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
@@ -180,12 +167,7 @@
     <Component class="javax.swing.JComboBox" name="Brand_2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
@@ -205,12 +187,7 @@
     <Component class="javax.swing.JComboBox" name="Brand_3">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
@@ -229,7 +206,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Text_2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Seleccione su presupuesto: ( 5,000$ - 1,000,000$ )"/>
+        <Property name="text" type="java.lang.String" value="Seleccione su presupuesto: ( 5,000$ - 5,000,000$ )"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
         </Property>
@@ -244,7 +221,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Text_3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="min (k)"/>
+        <Property name="text" type="java.lang.String" value="min"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
         </Property>
@@ -260,7 +237,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Text_4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="max (k)"/>
+        <Property name="text" type="java.lang.String" value="max"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
         </Property>
@@ -274,7 +251,7 @@
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSlider" name="Min_Slider_K">
+    <Component class="javax.swing.JSlider" name="Min_Slider">
       <Properties>
         <Property name="value" type="int" value="0"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -288,7 +265,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JSlider" name="Max_Slider_K">
+    <Component class="javax.swing.JSlider" name="Max_Slider">
       <Properties>
         <Property name="value" type="int" value="100"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -319,7 +296,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Max_Range">
       <Properties>
-        <Property name="text" type="java.lang.String" value="1,000,000"/>
+        <Property name="text" type="java.lang.String" value="5,000,000"/>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
         </Property>
@@ -330,66 +307,6 @@
           <Dimension value="[55, 15]"/>
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSlider" name="Max_Slider">
-      <Properties>
-        <Property name="value" type="int" value="100"/>
-        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[750, 750]"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[0, 0]"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[200, 15]"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="Text_5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="min"/>
-        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[750, 750]"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[0, 0]"/>
-        </Property>
-        <Property name="name" type="java.lang.String" value="0" noResource="true"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[25, 15]"/>
-        </Property>
-        <Property name="requestFocusEnabled" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="Text_6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="max"/>
-        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[750, 750]"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[0, 0]"/>
-        </Property>
-        <Property name="name" type="java.lang.String" value="0" noResource="true"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[25, 15]"/>
-        </Property>
-        <Property name="requestFocusEnabled" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JSlider" name="Min_Slider">
-      <Properties>
-        <Property name="value" type="int" value="0"/>
-        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[750, 750]"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[0, 0]"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[200, 15]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="Min_Range1">
@@ -406,6 +323,52 @@
         </Property>
         <Property name="requestFocusEnabled" type="boolean" value="false"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Min">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[750, 750]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[0, 0]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[75, 20]"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Manual"/>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[750, 750]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[0, 0]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[75, 20]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Max">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[750, 750]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[0, 0]"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[75, 20]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MaxActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
