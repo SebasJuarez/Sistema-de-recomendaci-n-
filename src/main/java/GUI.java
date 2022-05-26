@@ -1,4 +1,10 @@
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.*;
 
 public class GUI extends javax.swing.JFrame {
 operations OP = new operations();
@@ -454,25 +460,30 @@ operations OP = new operations();
 
 //Metodos
     
-    
     private void BudgetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BudgetActionPerformed
         try{
             int MinVal = Integer.parseInt(Min.getText());
             int MaxVal = Integer.parseInt(Max.getText());
-            if(MinVal >= 5000 && MinVal <= 500000  && MaxVal >= 10000  && MaxVal <= 5000000 ){
+            if(MinVal >= 5000 && MinVal <= 5000000  && MaxVal >= 5000  && MaxVal <= 5000000 ){
                 if(MinVal + 5000 < MaxVal){
-                Min_Range.setText(String.format("%,d", MinVal));
-                Max_Range.setText(String.format("%,d", MaxVal));
-                System.out.println("1");
+                        Min_Range.setText(String.format("%,d", MinVal));
+                        Max_Range.setText(String.format("%,d", MaxVal));
+                        System.out.println("1");   
                 }else{
-                Min_Range.setText(String.format("%,d", MaxVal - 5000));
-                Max_Range.setText(String.format("%,d", MaxVal));
-                System.out.println("2");
+                    if(MaxVal >= 10000){
+                        Min_Range.setText(String.format("%,d", MaxVal - 5000));
+                        Max_Range.setText(String.format("%,d", MaxVal));
+                        System.out.println("2");
+                    }else{
+                        Min_Range.setText(String.format("%,d", 5000));
+                        Max_Range.setText(String.format("%,d", MaxVal + 1000));
+                        System.out.println("3");
+                    }
                 }
             }else{
                 Min_Range.setText("5,000");
                 Max_Range.setText("5,000,000");
-                System.out.println("3");
+                System.out.println("Valores no aceptados");
             }
         }catch(NumberFormatException e){
             Min_Range.setText("5,000");
@@ -492,8 +503,7 @@ operations OP = new operations();
     private void MinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MinActionPerformed
-
-            
+          
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
@@ -506,6 +516,21 @@ operations OP = new operations();
         //Brand_2.setModel(new javax.swing.DefaultComboBoxModel<>(Selected2));
         //Brand_3.setModel(new javax.swing.DefaultComboBoxModel<>(Selected3));
     }
+    
+    public void setCarIMG_1(String IMG_Path){
+        try{
+            Car_IMG_1.setIcon(new ImageIcon(IMG_Path));
+        }catch (Exception e) {
+            System.out.println("Error");
+        } 
+    }
+    public void setCarIMG_2(String IMG_Path){
+        Car_IMG_2.setIcon(new ImageIcon(IMG_Path));
+    }
+    public void setCarIMG_3(String IMG_Path){
+        Car_IMG_3.setIcon(new ImageIcon(IMG_Path));
+    }
+    
     
     public static void main(String args[]) {
         try {

@@ -10,5 +10,9 @@ public class main {
         Interfaz.show();
 
         Interfaz.setManufacturers(DB.getCarManufacturers());
+        
+        
+        
+        Interfaz.setCarIMG_1("/Toyota_Corolla.jpg");
     }
 }
