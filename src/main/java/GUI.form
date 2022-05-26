@@ -63,7 +63,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Max" min="-2" pref="65" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" pref="125" max="-2" attributes="0"/>
+                      <Component id="Toggle" min="-2" pref="125" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -103,7 +103,7 @@
                   <Component id="Min" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Min_Range1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Max" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Toggle" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="170" max="32767" attributes="0"/>
           </Group>
@@ -337,9 +337,12 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="Toggle">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Manual"/>
+        <Property name="text" type="java.lang.String" value="Manual Toggle"/>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[750, 750]"/>
         </Property>
@@ -351,7 +354,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ToggleActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="Max">

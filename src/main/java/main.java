@@ -12,14 +12,24 @@ public class main {
         Interfaz.setManufacturers(DB.getCarManufacturers());
         while (true){
             int Budget_Min, Budget_Max;
-            Budget_Min = OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider());
-            Budget_Max = OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMaxSlider());
-            if (Budget_Min + 4900 < Budget_Max){
-                Interfaz.setMinValue(OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider()));
-                Interfaz.setMaxValue(OP.MapRange(0, 100, 5000, 5000000, Interfaz.getMaxSlider()));
+            Budget_Min = OP.Int_MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider());
+            Budget_Max = OP.Int_MapRange(0, 100, 10000, 5000000, Interfaz.getMaxSlider());
+            if (Interfaz.getButtonState() == true){
+                if (Budget_Min + 5000 < Budget_Max){
+                    Interfaz.setMinValue(OP.Int_MapRange(0, 100, 5000, 5000000, Interfaz.getMinSlider()));
+                    Interfaz.setMaxValue(OP.Int_MapRange(0, 100, 10000, 5000000, Interfaz.getMaxSlider()));
+                }else{
+                    Interfaz.setMinValue(Budget_Max - 5000);
+                    Interfaz.setMaxValue(Budget_Max);
+                }
             }else{
-                Interfaz.setMinValue(Budget_Max - 5000);
-                Interfaz.setMaxValue(Budget_Max);
+                if (Budget_Min + 5000 < Budget_Max){
+                    Interfaz.setMinValue(OP.Int_Clamp(Interfaz.getMinValueText(), 5000, 5000000));
+                    Interfaz.setMaxValue(OP.Int_Clamp(Interfaz.getMaxValueText(), 10000, 5000000));
+                }else{
+                    Interfaz.setMinValue(OP.Int_Clamp(Interfaz.getMaxValueText()-5000, 5000, 5000000));
+                    Interfaz.setMaxValue(OP.Int_Clamp(Interfaz.getMaxValueText(), 10000, 5000000));
+                }
             }
         }
     }

@@ -23,7 +23,7 @@ public class GUI extends javax.swing.JFrame {
         Max_Range = new javax.swing.JLabel();
         Min_Range1 = new javax.swing.JLabel();
         Min = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        Toggle = new javax.swing.JButton();
         Max = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -109,13 +109,14 @@ public class GUI extends javax.swing.JFrame {
         Min.setMinimumSize(new java.awt.Dimension(0, 0));
         Min.setPreferredSize(new java.awt.Dimension(75, 20));
 
-        jButton1.setText("Manual");
-        jButton1.setMaximumSize(new java.awt.Dimension(750, 750));
-        jButton1.setMinimumSize(new java.awt.Dimension(0, 0));
-        jButton1.setPreferredSize(new java.awt.Dimension(75, 20));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Toggle.setText("Manual Toggle");
+        Toggle.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        Toggle.setMaximumSize(new java.awt.Dimension(750, 750));
+        Toggle.setMinimumSize(new java.awt.Dimension(0, 0));
+        Toggle.setPreferredSize(new java.awt.Dimension(75, 20));
+        Toggle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ToggleActionPerformed(evt);
             }
         });
 
@@ -165,7 +166,7 @@ public class GUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Toggle, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -198,16 +199,21 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(Min, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Min_Range1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Max, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Toggle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(170, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    boolean State = true;
+    private void ToggleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ToggleActionPerformed
+        if(State == true){
+            State = false;
+        }else{
+            State = true;
+        }
+    }//GEN-LAST:event_ToggleActionPerformed
 
     private void MaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxActionPerformed
         // TODO add your handling code here:
@@ -215,35 +221,34 @@ public class GUI extends javax.swing.JFrame {
 
     //Metodos
     
+    public boolean getButtonState(){
+        return State;
+    }
+    
     public int getMinValueText(){
-        int Num = Integer.parseInt(Min.getText());
-        return Num;
+        return Integer.parseInt(Min.getText());
     }
     
     public int getMaxValueText(){
-        int Num = Integer.parseInt(Max.getText());
-        return Num;
+        return Integer.parseInt(Max.getText());
     }
     
     public float getMinSlider(){
-        float Min = Min_Slider.getValue();
-        return Min;
+        return Min_Slider.getValue();
     }
     
     public float getMaxSlider(){
-        float Max= Max_Slider.getValue();
-        return Max;
+        return Max_Slider.getValue();
     }
         
     public void setMinValue(int Min){
-        String Value = String.format("%,d", Min);
-        Min_Range.setText(Value);
+        Min_Range.setText(String.format("%,d", Min));
     }
     
     public void setMaxValue(int Max){
-        String Value = String.format("%,d", Max);
-        Max_Range.setText(Value);
+        Max_Range.setText(String.format("%,d", Max));
     }
+    
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
@@ -298,6 +303,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel Text_3;
     private javax.swing.JLabel Text_4;
     private javax.swing.JLabel Title;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Toggle;
     // End of variables declaration//GEN-END:variables
 }
