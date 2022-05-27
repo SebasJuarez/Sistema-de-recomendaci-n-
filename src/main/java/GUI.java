@@ -8,7 +8,6 @@ import javax.swing.*;
 
 public class GUI extends javax.swing.JFrame {
 operations OP = new operations();
-database_parser DBP = new database_parser();
     
     public GUI() {
         initComponents();
@@ -497,7 +496,10 @@ database_parser DBP = new database_parser();
     }//GEN-LAST:event_MaxActionPerformed
 
     private void Send_DataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Send_DataActionPerformed
-        // TODO add your handling code here:
+        //DBP.get
+        //setCarManufacturers(,,);
+        //setCarModels(,,);
+        //setCarPricess(,,);
     }//GEN-LAST:event_Send_DataActionPerformed
 
     private void MinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinActionPerformed
