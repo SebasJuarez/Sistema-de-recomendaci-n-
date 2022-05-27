@@ -11,8 +11,6 @@ public class main {
 
         Interfaz.setManufacturers(DB.getCarManufacturers());
         
-        
-        
         Interfaz.setCarIMG_1("/Toyota_Corolla.jpg");
     }
 }
