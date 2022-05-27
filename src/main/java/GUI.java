@@ -8,6 +8,7 @@ import javax.swing.*;
 
 public class GUI extends javax.swing.JFrame {
 operations OP = new operations();
+database_parser DBP = new database_parser();
     
     public GUI() {
         initComponents();
@@ -502,7 +503,25 @@ operations OP = new operations();
     private void MinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MinActionPerformed
-      
+    
+    public void setCarManufacturers(String Value1, String Value2, String Value3){
+        Car_Manufacturer_1.setText("Manufacturer: " + Value1);
+        Car_Manufacturer_2.setText("Manufacturer: " + Value2);
+        Car_Manufacturer_3.setText("Manufacturer: " + Value3);
+    }
+    
+    public void setCarModels(String Value1, String Value2, String Value3){
+        Car_Model_1.setText("Model: " + Value1);
+        Car_Model_2.setText("Model: " + Value2);
+        Car_Model_3.setText("Model: " + Value3);
+    }
+    
+    public void setCarPrices(String Value1, String Value2, String Value3){
+        Car_Price_1.setText("Price: " + Value1);
+        Car_Price_2.setText("Price: " + Value2);
+        Car_Price_3.setText("Price: " + Value3);
+    }
+    
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
