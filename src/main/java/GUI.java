@@ -491,7 +491,18 @@ operations OP = new operations();
             System.out.println("4");
         }
     }//GEN-LAST:event_BudgetActionPerformed
-          
+    private void MaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MaxActionPerformed
+
+    private void Send_DataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Send_DataActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Send_DataActionPerformed
+
+    private void MinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MinActionPerformed
+      
     //Settear las marcas
     public void setManufacturers(String[] Manufacturers){
         Brand_1.setModel(new javax.swing.DefaultComboBoxModel<>(Manufacturers));
